@@ -7,3 +7,13 @@ name = "polynomials"
 version = "0.1"
 description = "Paquete de polinomios"
 requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
