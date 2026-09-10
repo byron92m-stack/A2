@@ -1,0 +1,9 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "polynomials"
+version = "0.1"
+description = "Paquete de polinomios"
+requires-python = ">=3.9"
